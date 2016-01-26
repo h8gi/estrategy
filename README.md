@@ -5,11 +5,9 @@
 `chicken-install`してください。
 
 ~~~~~{.scheme}
-
 csi> (use estrategy)
 csi> (driver-loop)
 scheme[value]> 
-
 ~~~~~
 
 lambda式のパラメータにオプションをつけることで  
@@ -24,7 +22,6 @@ lambda式のパラメータにオプションをつけることで
 `call-by`によってデフォルトの評価戦略を変更できる
 
 ~~~~~{.scheme}
-
 scheme[value]> (call-by need)
 scheme[need]> (let ((foo (lambda (x y)
                            (+ (* x 2) x))))
@@ -69,5 +66,4 @@ scheme[value]> (let ((foo (lambda (x y)
 Error: Unbound variable
 goo 
 scheme[value]> 
-
 ~~~~~
