@@ -1,8 +1,20 @@
-# scheme 超循環評価器 ver0.0.4
+# estrategy
 
-このバージョンでは、lambda式のパラメータにオプションをつけることで
-そのパラメータの評価戦略を値呼び、名前呼び、必要呼びの3つから選べるようにする  
-オプション無しだと値呼び?
+## scheme 超循環評価器 
+
+`chicken-install`してください。
+
+~~~~~{.scheme}
+
+csi> (use estrategy)
+csi> (driver-loop)
+scheme[value]> 
+
+~~~~~
+
+lambda式のパラメータにオプションをつけることで  
+そのパラメータの評価戦略を値呼び、名前呼び、必要呼びの3つから選べるようにする。  
+オプション無しだとデフォルトの評価戦略で評価されるようになる。
 
 ~~~~~{.scheme}
 (lambda ((x value) (y name) (z need))
