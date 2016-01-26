@@ -1,0 +1,6 @@
+;;; estrategy.meta
+
+((author "yagi hiroki")
+ (synopsis "To learn evaluation strategy")
+ (license "GPLv3")
+ (files "estrategy.scm" "estrategy.setup" "estrategy.meta"))

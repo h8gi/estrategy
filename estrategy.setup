@@ -1,0 +1,9 @@
+;; estrategy.setup
+;;; コンパイル  => estrategy.so
+(compile -s -O3 -d1 "estrategy.scm" -j estrategy)
+(compile -s -O3 -d0 "estrategy.import.scm")
+;;; インストール
+(install-extension
+ 'estrategy
+ '("estrategy.so" "estrategy.import.so")
+ '((version 1.0)))
